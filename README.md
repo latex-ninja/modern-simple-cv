@@ -16,7 +16,7 @@ Please replace them with your own photos and logos if you use this template!
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
-		<th>Classic: <code>without image</code> and <code>with image</code></th>
+		<th><code>without image</code> and <code>with image</code></th>
 	</tr>
 	<tr>
 		<td>
@@ -29,7 +29,7 @@ Please replace them with your own photos and logos if you use this template!
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
-		<th>Classic: <code>Version 2</code></th>
+		<th><code>Version 2</code></th>
 	</tr>
 	<tr>
 		<td>
