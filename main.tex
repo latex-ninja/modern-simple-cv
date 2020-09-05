@@ -1,4 +1,4 @@
-\documentclass{modernsimplecv}
+\documentclass[english]{modernsimplecv}
 % try out different fonts: classic, fira, raleway, chivo
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1cm, a4paper]{geometry}
@@ -17,6 +17,26 @@
 \usepackage{beuron}
 \usepackage{LobsterTwo}%if not suposed to be main font, load other main font after this
 
+\frenchspacing
+
+\usepackage[main=english]{babel}
+
+\usepackage[
+  babel=true, % Enable language-specific kerning. Take language-settings from the languge of the current document (see Section 6 of microtype.pdf)
+  expansion=alltext,
+  protrusion=alltext-nott, % Ensure that at listings, there is no change at the margin of the listing
+  final % Always enable microtype, even if in draft mode. This helps finding bad boxes quickly.
+        % In the standard configuration, this template is always in the final mode, so this option only makes a difference if "pros" use the draft mode
+]{microtype}
+
+% \texttt{test -- test} keeps the "--" as "--" (and does not convert it to an en dash)
+\DisableLigatures{encoding = T1, family = tt* }
+
+\usepackage{iftex}
+\ifluatex
+  \usepackage{fontspec}
+  \usepackage{selnolig}
+\fi
 
 
 %------------------------------------------------------------------ Variablen
