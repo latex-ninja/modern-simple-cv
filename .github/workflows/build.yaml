@@ -1,0 +1,25 @@
+name: Build with lualatex
+on: [push, pull_request]
+jobs:
+  pdflatex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile main.tex
+        uses: dante-ev/latex-action@master
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args:
+  lualatex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile main.tex
+        uses: dante-ev/latex-action@master
+        with:
+          root_file: main.tex
+          compiler: lualatex
+          args:
